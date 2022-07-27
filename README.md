@@ -11,3 +11,10 @@ this bot is the better version of  `simple music bot`
 
 
 `wavelink`
+
+
+# will need:
+
+**to know how to use nextcord**
+
+**and how to run a bot**
