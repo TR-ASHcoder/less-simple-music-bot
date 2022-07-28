@@ -7,10 +7,10 @@ this bot is the better version of  `simple music bot`
 [`nextcord`](https://pypi.org/project/nextcord/)
 
 
-`datetime`
+`datetime` < --- this automatically comes with python, so no pip install bullshit 
 
 
-`wavelink`
+[`wavelink`](https://pypi.org/project/wavelink/)
 
 
 # will need:
