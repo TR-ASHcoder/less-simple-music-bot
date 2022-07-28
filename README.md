@@ -4,7 +4,7 @@ this bot is the better version of  `simple music bot`
 # imports used:
 
 
-`nextcord`
+[`nextcord`](https://pypi.org/project/nextcord/)
 
 
 `datetime`
