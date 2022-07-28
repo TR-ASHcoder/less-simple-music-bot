@@ -7,7 +7,7 @@ this bot is the better version of  `simple music bot`
 `nextcord`
 
 
-`PyNaCl`
+`datetime`
 
 
 `wavelink`
@@ -18,3 +18,8 @@ this bot is the better version of  `simple music bot`
 **to know how to use nextcord**
 
 **and how to run a bot**
+
+
+# NOTE:
+
+if you're using replit you'll manually need to install `nextcord` through `packages`
