@@ -83,7 +83,7 @@ async def play(ctx: commands.Context, *, search: wavelink.YouTubeTrack):
 
   
   
-  em = nextcord.Embed(title = f"*~Now Playing~*")
+  em = nextcord.Embed(title = f"*Now Playing*")
   em.add_field(name=f"`{search.title}`", value=f"**By**: ||`{search.author}`||")
     
 
@@ -92,7 +92,7 @@ async def play(ctx: commands.Context, *, search: wavelink.YouTubeTrack):
 
   if vc.is_playing():
     await vc.queue.put_wait(search)
-    await ctx.reply(f"***~Added `{search.title}` to the queue~***", mention_author=False)
+    await ctx.reply(f"***Added `{search.title}` to the queue***", mention_author=False)
 
 
   elif vc.queue.is_empty:
@@ -123,7 +123,7 @@ async def pause(ctx: commands.Context):
   else: 
     vc: wavelink.Player = ctx.voice_client
 
-  em = nextcord.Embed(title = f"*~Paused~*")
+  em = nextcord.Embed(title = f"*Paused*")
   em.add_field(name=f"*we `paused` your song for ya*", value="you better be grateful")
 
   
@@ -148,7 +148,7 @@ async def resume(ctx: commands.Context):
   else: 
     vc: wavelink.Player = ctx.voice_client
 
-  em = nextcord.Embed(title = f"*~Resumed~*")
+  em = nextcord.Embed(title = f"*Resumed*")
   em.add_field(name=f"*we `resumed` your song for ya*", value="you better be grateful")
 
   
@@ -173,7 +173,7 @@ async def stop(ctx: commands.Context):
   else: 
     vc: wavelink.Player = ctx.voice_client
 
-  em = nextcord.Embed(title = f"*~Stopped~*")
+  em = nextcord.Embed(title = f"*Stopped*")
   em.add_field(name=f"*we `stopped` your song for ya*", value="you better be grateful")
 
   
@@ -198,7 +198,7 @@ async def disconnect(ctx: commands.Context):
   else: 
     vc: wavelink.Player = ctx.voice_client
 
-  em = nextcord.Embed(title = f"*~Disconnected~*")
+  em = nextcord.Embed(title = f"*Disconnected*")
   em.add_field(name=f"*the bot has been `disconnected`*", value="type in `ADD PREFIX` play and a song of choice to invite it back :]")
 
   await vc.disconnect()
@@ -220,9 +220,9 @@ async def loop(ctx: commands.Context):
     setattr(vc, "loop", False)
 
   if vc.loop:
-    await ctx.reply(f"***~Now looping your song~***", mention_author=False)
+    await ctx.reply(f"***Now looping your song~***", mention_author=False)
   else: 
-    await ctx.reply(f'***~`{vc.track.title}` is no longer looping~***', mention_author=False)
+    await ctx.reply(f'***`{vc.track.title}` is no longer looping***', mention_author=False)
 
 
 
@@ -237,7 +237,7 @@ async def skip(ctx: commands.Context):
   else: 
     vc: wavelink.Player = ctx.voice_client
 
-  em = nextcord.Embed(title = f"*~skiped~*")
+  em = nextcord.Embed(title = f"*skiped*")
   em.add_field(name=f"*we `skiped` your song for ya*", value="you better be grateful")
 
   
@@ -263,7 +263,7 @@ async def queue(ctx: commands.Context):
 
 
   
-  em = nextcord.Embed(title = f"***~Queue~***",   
+  em = nextcord.Embed(title = f"***Queue***",   
   color=nextcord.Color.from_rgb(46,49,54))
   queue = vc.queue.copy()
   song_count = 0 
@@ -284,10 +284,10 @@ async def info(ctx: commands.Context):
     vc: wavelink.Player = ctx.voice_client
 
   if not vc.is_playing():
-    await ctx.reply("***~nothing is playing at the moment~***", mention_author=False)
+    await ctx.reply("***nothing is playing at the moment***", mention_author=False)
 
 
-  em = nextcord.Embed(title = f"***~Info~***", description=f"**Artist:** \n`{vc.track.author}`"    
+  em = nextcord.Embed(title = f"***Info***", description=f"**Artist:** \n`{vc.track.author}`"    
   ,color=nextcord.Color.from_rgb(100, 108, 245))
   em.add_field(name="Length:", value=f"`{str(datetime.timedelta(seconds=vc.track.length))}`")
   em.add_field(name="Extra Info:", value=f"[Click me for original]({str(vc.track.uri)})")
