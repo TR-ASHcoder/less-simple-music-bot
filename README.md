@@ -22,4 +22,4 @@ this bot is the better version of  [`simple music bot`](https://github.com/TR-AS
 
 # NOTE:
 
-if you're using replit you'll manually need to install `nextcord` through `packages`
+if you're using replit you'll manually need to install `nextcord` through `packages` tab
