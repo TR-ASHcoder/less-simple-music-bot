@@ -19,6 +19,8 @@ this bot is the better version of  [`simple music bot`](https://github.com/TR-AS
 
 **and how to run a bot**
 
+**and of course, a token**
+
 
 # NOTE:
 
