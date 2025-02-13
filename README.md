@@ -7,7 +7,7 @@ this bot is the better version of  [`simple music bot`](https://github.com/TR-AS
 [`nextcord`](https://pypi.org/project/nextcord/)
 
 
-`datetime` < --- this automatically comes with python, so no pip install bullshit 
+`datetime` < --- this automatically comes with python, so no pip install 
 
 
 [`wavelink`](https://pypi.org/project/wavelink/)
